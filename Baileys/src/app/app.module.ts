@@ -20,6 +20,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { FaqComponent } from './pages/faq/faq.component';
+import { MembershipsComponent } from './pages/memberships/memberships.component';
+import { AboutComponent } from './pages/about/about.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { FaqComponent } from './pages/faq/faq.component';
     ExternalApiComponent,
     ErrorComponent,
     FaqComponent,
+    MembershipsComponent,
+    AboutComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

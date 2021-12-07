@@ -6,6 +6,9 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
 import { ErrorComponent } from './pages/error/error.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 import { FaqComponent } from './pages/faq/faq.component';
+import { MembershipsComponent } from './pages/memberships/memberships.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   {
@@ -30,6 +33,21 @@ const routes: Routes = [
   {
     path: 'faq',
     component: FaqComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'memberships',
+    component: MembershipsComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'cart',
+    component: CartComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
     pathMatch: 'full',
   },
 ];
