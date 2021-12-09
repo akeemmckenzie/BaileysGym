@@ -23,6 +23,12 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { MembershipsComponent } from './pages/memberships/memberships.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { Cart1Component } from './pages/cart1/cart1.component';
+import { Cart2Component } from './pages/cart2/cart2.component';
+import { Cart3Component } from './pages/cart3/cart3.component';
+import { Checkout1Component } from './pages/checkout1/checkout1.component';
+import { Checkout2Component } from './pages/checkout2/checkout2.component';
+import { Checkout3Component } from './pages/checkout3/checkout3.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +46,12 @@ import { CartComponent } from './pages/cart/cart.component';
     MembershipsComponent,
     AboutComponent,
     CartComponent,
+    Cart1Component,
+    Cart2Component,
+    Cart3Component,
+    Checkout1Component,
+    Checkout2Component,
+    Checkout3Component,
   ],
   imports: [
     BrowserModule,

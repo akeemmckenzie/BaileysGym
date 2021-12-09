@@ -6,9 +6,7 @@
   height: 0 px;
   width: 100%;
 }
-.banner-area .h1 {
-  color: blue;
-}
+
 .banner-area:after {
   content: '';
   position: absolute;
@@ -26,6 +24,13 @@
   float: left;
   width: 33.3%;
   padding: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
 }
 
 /* Style the list */
