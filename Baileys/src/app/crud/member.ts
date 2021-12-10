@@ -1,2 +1,5 @@
-export interface Member {
+export interface member {
+  name: string;
+  membershiptype: string;
+  productid: string;
 }

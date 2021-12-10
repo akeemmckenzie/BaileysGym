@@ -1,4 +1,5 @@
 <div class="container d-flex align-items-center">
+  <form [formGroup]="memberForm" (ngSubmit)="submitForm()" novalidate></form>
   <div class="box-2">
     <div class="box-inner-2">
       <div>
@@ -75,13 +76,40 @@
                   <span class="fas fa-dollar-sign"></span>$49.99
                 </p>
               </div>
+
               <div class="btn btn-primary mt-2">
-                Pay<span class="fas fa-dollar-sign px-1"></span>$49.99
+                <span class="fas fa-dollar-sign px-1"></span>$49.99
               </div>
+              <script>
+                function myFunction() {
+                  let text;
+                  let person = prompt(
+                    'Please enter your name:',
+                    'Harry Potter'
+                  );
+                  if (person == null || person == '') {
+                    text = 'User cancelled the prompt.';
+                  } else {
+                    text = 'Hello ' + person + '! How are you today?';
+                  }
+                  document.getElementById('demo').innerHTML = text;
+                }
+              </script>
             </div>
           </div>
         </div>
       </form>
     </div>
   </div>
+</div>
+<div>
+  <form [formGroup]="memberForm" (ngSubmit)="submitForm()" novalidate>
+    Please Type Full Name and Submit for payment
+    <div class="form-group">
+      <label>Name</label>
+      <input formControlName="name" />
+    </div>
+    <br /><br />
+    <button type="submit">Submit</button>
+  </form>
 </div>

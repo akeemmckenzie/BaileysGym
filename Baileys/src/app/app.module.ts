@@ -4,8 +4,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import json from 'highlight.js/lib/languages/json';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-import { FormsModule } from '@angular/forms';
+import { throwError, Observable } from 'rxjs';
+import { FormBuilder } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -60,6 +61,7 @@ import { Checkout3Component } from './pages/checkout3/checkout3.component';
     HttpClientModule,
     NgbModule,
     FormsModule,
+    ReactiveFormsModule,
     HighlightModule,
     FontAwesomeModule,
     AuthModule.forRoot({
