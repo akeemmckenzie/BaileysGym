@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  width: 100%;
 }
 
 /* The hero image */
@@ -10,7 +11,7 @@ html {
     url('../../../assets/pictures/hero_image.jpg');
 
   /* Set a specific height */
-  height: 50%;
+  height: 160%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
