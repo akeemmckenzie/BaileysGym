@@ -1,1 +1,4 @@
-
+.section {
+  background-origin: padding-box;
+  background-color: aqua;
+}
